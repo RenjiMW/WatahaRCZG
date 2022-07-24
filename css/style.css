@@ -286,6 +286,40 @@ hr {
 
 }
 
+@media screen and (max-width: 320px) {
+    .navLinks {
+        font-size: 0.6em;
+        padding: 4px;
+    }
+
+    .gridGallery img,
+    .gridGallery iframe {
+        border: black 2px solid;
+        max-width: 200px;
+        margin-bottom: 15px;
+    }
+
+    .map {
+        max-width: 98%;
+        height: auto;
+    }
+
+    .rugbyImg {
+        max-width: 98%;
+        height: auto;
+    }
+
+    .logoParent {
+        max-width: 50px;
+        margin: 8px 5px 3px 5px;
+    }
+
+    .mainPhoto {
+        max-width: 90vw;
+    }
+
+}
+
  /*---- trenings section ----*/
 
 
