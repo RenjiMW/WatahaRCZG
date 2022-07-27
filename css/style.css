@@ -146,6 +146,13 @@ body {
     margin-bottom: 8px;
 }
 
+.bodyDiv{
+    width: 70%;
+    margin: auto;
+    min-height: calc(100vh - 170px);
+    background-color: #070d07;
+    color: white;
+}
 
 /*---------- MAIN PAGE ------------------*/
 .welcome h2 {
@@ -227,14 +234,6 @@ hr {
         margin-left: 20%;
     }
     
-    .bodyDiv{
-        width: 70%;
-        margin: auto;
-        min-height: calc(100vh - 170px);
-        background-color: #070d07;
-        color: white;
-    }
-
     .mainNav {
         max-width: 50%;
     }
@@ -315,7 +314,11 @@ hr {
     }
 
     .mainPhoto {
-        max-width: 90vw;
+        max-width: 90vw; /*gdy ma 80vw to jest na środku ale to chyba nie od tego zależy - do poprawy */
+    }
+
+    .bodyDiv{
+        width: 95%;
     }
 
 }

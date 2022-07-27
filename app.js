@@ -1,4 +1,4 @@
-const showBtn = document.querySelector('.sectionsBtn')
+/* const showBtn = document.querySelector('.sectionsBtn')
 
 
 showBtn.addEventListener('click', () => {
@@ -10,4 +10,4 @@ showBtn.addEventListener('click', () => {
     sectionHide.style.display = 'none';
     showBtn.textContent = "Pokaż szczegóły";
     }
-});
+}); */
