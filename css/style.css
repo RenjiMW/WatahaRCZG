@@ -86,6 +86,7 @@ header {
     z-index: 1;
     position: fixed;
     top: 0;
+    right: 0;
     background-color: #569b73;
     border-bottom: black solid 2px;
     width: 100%;
@@ -212,6 +213,10 @@ hr {
     max-width: 50vw;
 }
 
+.photoAndMainContent, .treningi, .kontakt, .rugby {  /*-- style dla podstrony  dla monitorów PC--*/
+    margin-top: 110px;
+}
+
 /* ---------- Web Fonts ---------------------*/
 @font-face {
     font-family: 'Anolition Regular';
@@ -223,9 +228,7 @@ hr {
 @media screen and (min-width: 900px) {
     
     header {
-        position: fixed;
         height: 100px;
-        right: 0px;
     }
 
     .logo {
