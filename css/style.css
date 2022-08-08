@@ -96,6 +96,42 @@ header {
 
 }
 
+    /* dodane zabrałem tą część z min 900px aż do następnego akapitu */
+header {
+    position: fixed;
+    height: 100px;
+    right: 0px;
+}
+
+.logo {
+    max-width: 95px;
+    position: relative;
+    top: 2px;
+
+}
+
+.logoParent {
+    margin-left: 20%;
+}
+
+.mainNav {
+    max-width: 50%;
+}
+
+.ulNav {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.photoAndMainContent, .treningi, .kontakt, .rugby {  /*-- style dla podstrony  dla monitorów PC--*/
+    margin-top: 110px;
+}
+
+.photoAndMainContent figure {
+    margin-bottom: 6px;
+}
+
+
 /* ---------- BODY STYLES ---------------*/
 
 body {
@@ -286,6 +322,7 @@ hr {
 }
 
 @media screen and (max-width: 576px) {
+
     .navLinks {
         font-size: 0.6em;
         padding: 4px;
