@@ -53,18 +53,14 @@ a:focus {
 
 nav li {
     display: inline-block;
-    font-size: 1.3em;
-}
-
-nav li a {
-    text-decoration: none;
-    margin-left: 10px;
 }
 
 .navLinks {
     background-color: black;
     padding: 10px;
     border-radius: 7%;
+    text-decoration: none;
+    font-size: 1.3em;
 }
 
 nav li a:link {
@@ -88,7 +84,6 @@ header {
     top: 0;
     right: 0;
     background-color: #569b73;
-    border-bottom: black solid 2px;
     width: 100%;
     height: 50px;
     display: flex;
@@ -96,10 +91,9 @@ header {
 }
 
 .logo {
-    width: 100%;
-    max-width: 70px;
+    height: 100%;
+    max-height: 45px;
     margin: auto; 
-
 }
 
 /* ---------- BODY STYLES ---------------*/
@@ -159,6 +153,12 @@ body {
     margin-bottom: 15px;
 }
 
+/*---------- Images size in rugby section ------------------*/
+.rugbyImg {
+    max-width: 100%;
+    height: auto;
+}
+
 /*---------- MAIN PAGE ------------------*/
 .welcome h2 {
     margin: 16px auto 8px;
@@ -206,10 +206,10 @@ hr {
 }
 
 /* ---------- MAIN PHOTO ---------------*/
-
 .mainPhoto {
     border-radius: 5px;
-    max-width: 50vw;
+    max-width: 95%;
+    margin-top: 5px;
 }
 
 .photoAndMainContent, .treningi, .kontakt, .rugby {  /*-- style dla podstrony  dla monitorów PC--*/
@@ -222,129 +222,15 @@ hr {
     src: url() format('woff');
 }
 
-/* ---------- Media Queries ---------------------*/
+/*---- trenings section ----*/
 
-@media screen and (min-width: 900px) {
-        
-        header {
-            height: 100px;
-        }
-
-        .logo {
-            max-width: 95px;
-            position: relative;
-            top: 2px;
-
-        }
-        
-        .logoParent {
-            margin-left: 20%;
-        }
-        
-        .mainNav {
-            max-width: 50%;
-        }
-
-        .ulNav {
-            display: flex;
-            justify-content: flex-start;
-        }
-
-        .photoAndMainContent, .treningi, .kontakt, .rugby {  /*-- style dla podstrony  dla monitorów PC--*/
-            margin-top: 110px;
-        }
-
-        .photoAndMainContent figure {
-            margin-bottom: 6px;
-        }
-
-        .mapaZG {
-            display: block;
-            max-width: 800px;
-            margin: 20px auto;
-            margin-top: 20px;
-        }
-
-        .gridBox {
-            margin: auto 20px;
-            display: grid;
-            grid-template-columns: 1.1fr 1fr 1.1fr;
-            grid-column-gap: 2%;
-        }
-
-        .kontakt {
-            padding-top: 40px;
-        }
-
-        .gridGallery {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-column-gap: 2%;
-            padding: 0 2%;
-        }
-    }
-
-@media screen and (min-width: 576px) {
-    .gridGallery {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-column-gap: 2%;
-        padding: 0 2%;
-    }
+.treningi {
+    padding: 5px 20px;
 }
 
-@media screen and (max-width: 576px) {
-    .navLinks {
-        font-size: 0.6em;
-        padding: 4px;
-    }
-
-    .gridGallery img,
-    .gridGallery iframe {
-        border: black 2px solid;
-        max-width: 90%;
-        margin-bottom: 15px;
-    }
-
-    .map {
-        max-width: 98%;
-        height: auto;
-    }
-
-    .rugbyImg {
-        max-width: 98%;
-        height: auto;
-    }
-
-    .logoParent {
-        max-width: 50px;
-        margin: 8px 5px 3px 5px;
-    }
-
-    .mainPhoto {
-        max-width: 90vw; /*gdy ma 80vw to jest na środku ale to chyba nie od tego zależy - do poprawy */
-    }
-
-    .bodyDiv{
-        width: 95%;
-        min-height: calc(100vh - 120px);
-    }
-
-    .matchTips li {
-        padding: 5px;
-    }
-
-    .guestMatches {
-        padding-right: 5px;
-    }
-    .hostMatches {
-        padding-left: 5px;
-    }
-
+#sectionsRemarks {
+    margin-top: 0.5em;
 }
-
- /*---- trenings section ----*/
-
 
 #sectionsRemarks li{
     text-align: justify;
@@ -400,3 +286,179 @@ hr {
 .sectionsBtn {
     margin-top: 15px;
 }
+
+/* ---------- Media Queries ---------------------*/
+/* ---------- To (max-width: 576px) chyba powinno być w podstawowych stylach jako mobile first---------------------*/
+@media screen and (max-width: 576px) {
+    .navLinks {
+        font-size: 0.6em;
+        padding: 4px;
+    }
+
+    .gridGallery img,
+    .gridGallery iframe {
+        border: black 2px solid;
+        max-width: 90%;
+        margin-bottom: 15px;
+    }
+
+    .gridGallery {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column-gap: 2%;
+        padding: 0 2%;
+    }
+
+    .map {
+        max-width: 98%;
+        height: auto;
+    }
+
+    .logoParent {
+        max-width: 50px;
+        margin: 8px 5px 3px 5px;
+    }
+
+    .mainPhoto {
+        max-width: 90vw; /*gdy ma 80vw to jest na środku ale to chyba nie od tego zależy - do poprawy */
+    }
+
+    .bodyDiv{
+        width: 95%;
+        min-height: calc(100vh - 120px);
+    }
+
+    .guestMatches {
+        padding-right: 5px;
+    }
+    .hostMatches {
+        padding-left: 5px;
+    }
+
+    .matchTips li {
+        padding: 5px;
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 899px) {
+    header {
+        height: 75px;
+    }
+
+    .photoAndMainContent, .treningi, .kontakt, .rugby { 
+        margin-top: 85px; /* ---------- distance of site content bellow the top of site and the navbar ---------------------*/
+    }
+
+    .logo {
+    max-height: 75px;
+    position: relative;
+    top: 2px;
+    }
+    
+    .navLinks {
+        font-size: 1em;
+        padding: 4px;
+        margin-left: 10px;
+    }
+
+    .ulNav:first-child {
+        margin-left: -30px;
+    }
+
+    .ulNav:last-child {
+        margin-right: 20px;
+    }
+    
+    .gridGallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 2%;
+        padding: 0 2%;
+    }
+
+    .guestMatches {
+        padding-right: 5px;
+    }
+   
+    .hostMatches {
+        padding-left: 5px;
+    }
+    
+    .matchTips li {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+
+@media screen and (min-width: 900px) {
+        
+    header {
+        height: 100px;
+    }
+
+    .logo {
+        max-height: 95px;
+        position: relative;
+        top: 2px;
+    }
+    
+    .logoParent {
+        margin-left: 20%;
+    }
+    
+    .mainNav {
+        max-width: 50%;
+    }
+
+    .ulNav {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .ulNav:first-child {
+        margin-left: auto;
+    }
+
+    .ulNav:last-child {
+        margin-right: auto;
+    }
+
+    .navLinks{
+        padding: 10px;
+        margin-left: 20px;
+    }
+
+    .photoAndMainContent, .treningi, .kontakt, .rugby {  /*-- style dla podstrony  dla monitorów PC--*/
+        margin-top: 110px;
+    }
+
+    .photoAndMainContent figure {
+        margin-bottom: 6px;
+    }
+
+    .mapaZG {
+        display: block;
+        max-width: 800px;
+        margin: 20px auto;
+        margin-top: 20px;
+    }
+
+    .gridBox {
+        margin: auto 20px;
+        display: grid;
+        grid-template-columns: 1.1fr 1fr 1.1fr;
+        grid-column-gap: 2%;
+    }
+
+    .kontakt {
+        padding-top: 40px;
+    }
+
+    .gridGallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 2%;
+        padding: 0 2%;
+    }
+}
+ 
