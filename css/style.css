@@ -138,7 +138,7 @@ body {
 }
 
 .bodyDiv{
-    width: 70%;
+    width: 70%; /* NOT MOBILE FIRST!! */
     margin: auto;
     min-height: calc(100vh - 170px);
     background-color: #070d07;
@@ -289,6 +289,7 @@ hr {
 
 /* ---------- Media Queries ---------------------*/
 /* ---------- To (max-width: 576px) chyba powinno być w podstawowych stylach jako mobile first---------------------*/
+
 @media screen and (max-width: 576px) {
     .navLinks {
         font-size: 0.6em;
@@ -310,7 +311,8 @@ hr {
     }
 
     .map {
-        max-width: 98%;
+        margin-top: 10px;
+        max-width: 100%;
         height: auto;
     }
 
@@ -369,6 +371,17 @@ hr {
         margin-right: 20px;
     }
     
+    .bodyDiv{
+        width: 80%;
+        min-height: calc(100vh - 145px);
+    }
+
+    .map {
+        margin-top: 10px;
+        max-width: 100%;
+        height: auto;
+    }
+
     .gridGallery {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -387,6 +400,17 @@ hr {
     .matchTips li {
         padding-right: 15px;
         padding-left: 15px;
+    }
+}
+
+@media screen and (orientation: landscape)  and (max-height: 576px) {
+    header {
+        z-index: auto;
+        position: static;
+    }
+
+    .photoAndMainContent, .treningi, .kontakt, .rugby { 
+        margin-top: 10px; /* ---------- distance of site content bellow the top of site and the navbar ---------------------*/
     }
 }
 
