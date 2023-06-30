@@ -7,9 +7,9 @@ The website is in Polish.
 
 
 **The website includes:**
-home page
-Training information page
-Match information page
-A page describing the general rules of rugby
-contact page
-A gallery of photos and videos from the team's matches
+- Home page
+- Training information page
+- Match information page
+- A page describing the general rules of rugby
+- Contact page
+- A gallery of photos and videos from the team's matches
