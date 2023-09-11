@@ -1,488 +1,585 @@
 /* ---------- GENERAL STYLES ---------------*/
 * {
-    box-sizing: border-box; /*wszytskie elementy będą włączały padding oraz border do kalkulowanego rozmiaru pudła*/
-    text-align: center;
-    font-family: 'Arimo', sans-serif;
+  box-sizing: border-box; /*wszytskie elementy będą włączały padding oraz border do kalkulowanego rozmiaru pudła*/
+  text-align: center;
+  font-family: "Arimo", sans-serif;
 }
 
 .important {
-font-weight:600 ;
+  font-weight: 600;
 }
 
 .noNormalizeMargin {
-    margin-inline-start: 0;
-    margin-inline-end: 0;
-} 
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+}
 
 /* ---------- LINKS ---------------*/
 a:link {
-    color: darkgreen;
+  color: darkgreen;
 }
 
 a:visited {
-    color: darkgreen;
+  color: darkgreen;
 }
 
 .mainNav a:visited {
-    color: white;
+  color: white;
 }
 
 a:hover {
-    font-style: italic;
+  font-style: italic;
 }
 
 .logoLink img:hover {
-    border: white 1px solid;
-    border-radius: 50%;
+  border: white 1px solid;
+  border-radius: 50%;
 }
 
 a:focus {
-    color:white;
-    background-color: green;
+  color: white;
+  background-color: green;
 }
 
 .logoParent a:focus {
-    background-color: #569b73;
+  background-color: #569b73;
 }
 
 .presentPage {
-    border: greenyellow solid 1px;
+  border: greenyellow solid 1px;
 }
 
 /* ---------- NAB BAR ---------------*/
 
 nav li {
-    display: inline-block;
+  display: inline-block;
 }
 
 .navLinks {
-    background-color: black;
-    padding: 10px;
-    border-radius: 7%;
-    text-decoration: none;
-    font-size: 1.3em;
+  background-color: black;
+  padding: 10px;
+  border-radius: 7%;
+  text-decoration: none;
+  font-size: 1.3em;
 }
 
 nav li a:link {
-    color: white;
+  color: white;
 }
 
 nav li a:visited {
-    color: gray;
+  color: gray;
 }
 
 nav {
-    width: 100%;
-    background-color: none;
+  width: 100%;
+  background-color: none;
 }
 
 /* ---------- HEADER ---------------*/
 
 header {
-    z-index: 1;
-    position: fixed;
-    top: 0;
-    right: 0;
-    background-color: #569b73;
-    width: 100%;
-    height: 50px;
-    display: flex;
-    align-items: center;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #569b73;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
 }
 
 .logo {
-    height: 100%;
-    max-height: 45px;
-    margin: auto; 
+  height: 100%;
+  max-height: 45px;
+  margin: auto;
 }
 
 /* ---------- BODY STYLES ---------------*/
 
 body {
-    background-color: #141407;
-    margin-bottom: 100; /* ---------- to chyba jakiś błąd do naprawienia?? #141407 poprzedni color---------------*/
+  background-color: #141407;
+  margin-bottom: 100; /* ---------- to chyba jakiś błąd do naprawienia?? #141407 poprzedni color---------------*/
 }
 
 .matchTips li {
-    padding: 0 27% 0 27%;
-    text-align: justify;
+  padding: 0 27% 0 27%;
+  text-align: justify;
 }
 
 .teamsListTitle {
-    font-size: 1.3em;
+  font-size: 1.3em;
 }
 
 .matchDiv {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 1%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 1%;
 }
 
 .hostMatches {
-    padding-left: 50%;
+  padding-left: 50%;
 }
 
 .guestMatches {
-    padding-right: 50%;
+  padding-right: 50%;
 }
 
 .hostMatches h3,
 .guestMatches h3,
 .hostMatches ul li,
 .guestMatches ul li {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 #matchTipsHeader {
-    margin-bottom: 8px;
+  margin-bottom: 8px;
 }
 
-.bodyDiv{
-    width: 70%; /* NOT MOBILE FIRST!! */
-    margin: auto;
-    min-height: calc(100vh - 170px);
-    background-color: #070d07;
-    color: white;
+.bodyDiv {
+  width: 70%; /* NOT MOBILE FIRST!! */
+  margin: auto;
+  min-height: calc(100vh - 170px);
+  background-color: #070d07;
+  color: white;
 }
 
 /*---------- Images size in gallery ------------------*/
 .gridGallery img,
 .gridGallery iframe {
-    border: black 2px solid;
-    max-width: 100%;
-    margin-bottom: 15px;
+  border: black 2px solid;
+  max-width: 100%;
+  margin-bottom: 15px;
 }
 
 /*---------- Images size in rugby section ------------------*/
 .rugbyImg {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 /*---------- MAIN PAGE ------------------*/
 .welcome h2 {
-    margin: 16px auto 8px;
+  margin: 16px auto 8px;
 }
 
 .welcome p {
-    margin: 8px auto 16px;
+  margin: 8px auto 16px;
 }
 
 #teamName {
-    margin-top:  0px;
+  margin-top: 0px;
 }
 
 .news h2 {
-    margin: 12px auto 0px;
+  margin: 12px auto 0px;
 }
 
 .news p {
-    margin: 8px auto 8px;
+  margin: 8px auto 8px;
 }
 
 .news article {
-    margin-bottom: 18px;
+  margin-bottom: 18px;
+}
+
+.mainContent {
+  display: grid;
+  grid-template-columns: [col_1] 1fr [col_2] 1fr [col_3];
+  grid-template-rows: [row_1] auto [row_2] auto;
+}
+
+.welcomeContent {
+  padding-top: 2%;
+  padding-left: 5%;
+  padding-right: 5%;
+  grid-column-start: col_1;
+  grid-column-end: col_3;
+  /* background-color: rgba(255, 0, 0, 0.406); */
+}
+
+/* .gridMinor {
+  padding-top: 5%;
+} */
+
+.gridMatches {
+  padding-left: 20%;
+  padding-right: 5%;
+}
+
+.gridTrainings {
+  padding-right: 20%;
+  padding-left: 5%;
 }
 
 .footer {
-    background-color: darkkhaki;
-    position: relative;
-    bottom: -3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: darkkhaki;
+  position: relative;
+  bottom: -3px;
 }
 
 .footer p {
-    margin: 0;
-    padding-top: 14.2px;
-    padding-bottom: 14.1px;
-    color: black;
-    font-weight: 600;
+  margin: 0;
+  padding-top: 14.2px;
+  padding-bottom: 14.1px;
+  padding-right: 10px;
+  color: black;
+  font-weight: 600;
+}
+
+.followIcons {
+  display: inline-block;
+  max-height: 30px;
+  margin: 0 7px;
+}
+
+.footer a:hover,
+.footer a:active,
+.footer a:visited,
+.footer a:link {
+  background-color: transparent;
 }
 
 hr {
-    position: relative;
-    bottom: -4px;
-    margin-bottom: 0;
-    background-color: #2a2e0c;
+  position: relative;
+  bottom: -4px;
+  margin-bottom: 0;
+  background-color: #2a2e0c;
 }
 
 /* ---------- MAIN PHOTO ---------------*/
 .mainPhoto {
-    border-radius: 5px;
-    max-width: 95%;
-    margin-top: 5px;
+  border-radius: 5px;
+  max-width: 95%;
+  margin-top: 5px;
 }
 
-.photoAndMainContent, .treningi, .kontakt, .rugby {  /*-- style dla podstrony  dla monitorów PC--*/
-    margin-top: 60px;
+.photoAndMainContent,
+.treningi,
+.kontakt,
+.rugby {
+  /*-- style dla podstrony  dla monitorów PC--*/
+  margin-top: 60px;
 }
 
 /* ---------- Web Fonts ---------------------*/
 @font-face {
-    font-family: 'Anolition Regular';
-    src: url() format('woff');
+  font-family: "Anolition Regular";
+  src: url() format("woff");
 }
 
 /*---- trenings section ----*/
 
 .treningi {
-    padding: 5px 20px;
+  padding: 5px 20px;
 }
 
 #sectionsRemarks {
-    margin-top: 0.5em;
+  margin-top: 0.5em;
 }
 
-#sectionsRemarks li{
-    text-align: justify;
+#sectionsRemarks li {
+  text-align: justify;
 }
 
 .AdditionalInfo p {
-    text-align: justify;
+  text-align: justify;
 }
 
 #importantTip {
-    margin-top: 1px; 
+  margin-top: 1px;
 }
 
 #importantTip span {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 .clothing ul li {
-    text-align: justify;
+  text-align: justify;
 }
 
 .clothing p {
-    margin-bottom: 3px;
-    text-align: justify;
+  margin-bottom: 3px;
+  text-align: justify;
 }
 
 /*---- gallery title ----*/
 
 .galeryTitle {
-    margin-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .galleryParagraph {
-    margin: 8px auto;
+  margin: 8px auto;
 }
 
 /*---- rugby section ----*/
 
-#rugbyDescription p, 
+#rugbyDescription p,
 #rugbyDescription h2,
 #rugbyDescription h3 {
-    text-align: justify;
+  text-align: justify;
 }
 
 #rugbyDescription {
-    padding: 5px 20px;
+  padding: 5px 20px;
 }
 
 .hide {
-    display: none;
+  display: none;
 }
 
 .sectionsBtn {
-    margin-top: 15px;
+  margin-top: 15px;
 }
 
 /* ---------- Media Queries ---------------------*/
 /* ---------- To (max-width: 576px) chyba powinno być w podstawowych stylach jako mobile first---------------------*/
 
 @media screen and (max-width: 576px) {
-    .navLinks {
-        font-size: 0.6em;
-        padding: 4px;
-    }
+  .navLinks {
+    font-size: 0.6em;
+    padding: 4px;
+  }
 
-    .gridGallery img,
-    .gridGallery iframe {
-        border: black 2px solid;
-        max-width: 90%;
-        margin-bottom: 15px;
-    }
+  .mainContent {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 
-    .gridGallery {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-column-gap: 2%;
-        padding: 0 2%;
-    }
+  .gridMain,
+  .gridMinor {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    padding: 0 5%;
+  }
 
-    .map {
-        margin-top: 10px;
-        max-width: 100%;
-        height: auto;
-    }
+  .gridTextContent {
+    text-align: justify;
+  }
 
-    .logoParent {
-        max-width: 50px;
-        margin: 8px 5px 3px 5px;
-    }
+  .gridMain p,
+  .gridMinor p {
+    font-size: 0.8em;
+  }
 
-    .mainPhoto {
-        max-width: 90vw; /*gdy ma 80vw to jest na środku ale to chyba nie od tego zależy - do poprawy */
-    }
+  .gridMain h1 {
+    font-size: 1.2em;
+  }
 
-    .bodyDiv{
-        width: 95%;
-        min-height: calc(100vh - 120px);
-    }
+  .gridMinor h2 {
+    font-size: 1.1em;
+  }
 
-    .guestMatches {
-        padding-right: 5px;
-    }
-    .hostMatches {
-        padding-left: 5px;
-    }
+  footer p {
+    font-size: small;
+  }
 
-    .matchTips li {
-        padding: 5px;
-    }
+  .followIcons {
+    display: inline-block;
+    max-height: 20px;
+    margin: 0 3px;
+  }
+
+  .gridGallery img,
+  .gridGallery iframe {
+    border: black 2px solid;
+    max-width: 90%;
+    margin-bottom: 15px;
+  }
+
+  .gridGallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 2%;
+    padding: 0 2%;
+  }
+
+  .map {
+    margin-top: 10px;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .logoParent {
+    max-width: 50px;
+    margin: 8px 5px 3px 5px;
+  }
+
+  .mainPhoto {
+    max-width: 90vw; /*gdy ma 80vw to jest na środku ale to chyba nie od tego zależy - do poprawy */
+  }
+
+  .bodyDiv {
+    width: 95%;
+    min-height: calc(100vh - 120px);
+  }
+
+  .guestMatches {
+    padding-right: 5px;
+  }
+  .hostMatches {
+    padding-left: 5px;
+  }
+
+  .matchTips li {
+    padding: 5px;
+  }
 }
 
 @media screen and (min-width: 577px) and (max-width: 899px) {
-    header {
-        height: 75px;
-    }
+  header {
+    height: 75px;
+  }
 
-    .photoAndMainContent, .treningi, .kontakt, .rugby { 
-        margin-top: 85px; /* ---------- distance of site content bellow the top of site and the navbar ---------------------*/
-    }
+  .photoAndMainContent,
+  .treningi,
+  .kontakt,
+  .rugby {
+    margin-top: 85px; /* ---------- distance of site content bellow the top of site and the navbar ---------------------*/
+  }
 
-    .logo {
+  .logo {
     max-height: 75px;
     position: relative;
     top: 2px;
-    }
-    
-    .navLinks {
-        font-size: 1em;
-        padding: 4px;
-        margin-left: 10px;
-    }
+  }
 
-    .ulNav:first-child {
-        margin-left: -30px;
-    }
+  .navLinks {
+    font-size: 1em;
+    padding: 4px;
+    margin-left: 10px;
+  }
 
-    .ulNav:last-child {
-        margin-right: 20px;
-    }
-    
-    .bodyDiv{
-        width: 80%;
-        min-height: calc(100vh - 145px);
-    }
+  .ulNav:first-child {
+    margin-left: -30px;
+  }
 
-    .map {
-        margin-top: 10px;
-        max-width: 100%;
-        height: auto;
-    }
+  .ulNav:last-child {
+    margin-right: 20px;
+  }
 
-    .gridGallery {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-column-gap: 2%;
-        padding: 0 2%;
-    }
+  .bodyDiv {
+    width: 80%;
+    min-height: calc(100vh - 145px);
+  }
 
-    .guestMatches {
-        padding-right: 5px;
-    }
-   
-    .hostMatches {
-        padding-left: 5px;
-    }
-    
-    .matchTips li {
-        padding-right: 15px;
-        padding-left: 15px;
-    }
+  .map {
+    margin-top: 10px;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .gridGallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2%;
+    padding: 0 2%;
+  }
+
+  .guestMatches {
+    padding-right: 5px;
+  }
+
+  .hostMatches {
+    padding-left: 5px;
+  }
+
+  .matchTips li {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
 }
 
-@media screen and (orientation: landscape)  and (max-height: 576px) {
-    header {
-        z-index: auto;
-        position: static;
-    }
+@media screen and (orientation: landscape) and (max-height: 576px) {
+  header {
+    z-index: auto;
+    position: static;
+  }
 
-    .photoAndMainContent, .treningi, .kontakt, .rugby { 
-        margin-top: 10px; /* ---------- distance of site content bellow the top of site and the navbar ---------------------*/
-    }
+  .photoAndMainContent,
+  .treningi,
+  .kontakt,
+  .rugby {
+    margin-top: 10px; /* ---------- distance of site content bellow the top of site and the navbar ---------------------*/
+  }
 }
 
 @media screen and (min-width: 900px) {
-        
-    header {
-        height: 100px;
-    }
+  header {
+    height: 100px;
+  }
 
-    .logo {
-        max-height: 95px;
-        position: relative;
-        top: 2px;
-    }
-    
-    .logoParent {
-        margin-left: 20%;
-    }
-    
-    .mainNav {
-        max-width: 50%;
-    }
+  .logo {
+    max-height: 95px;
+    position: relative;
+    top: 2px;
+  }
 
-    .ulNav {
-        display: flex;
-        justify-content: flex-start;
-    }
+  .logoParent {
+    margin-left: 20%;
+  }
 
-    .ulNav:first-child {
-        margin-left: auto;
-    }
+  .mainNav {
+    max-width: 50%;
+  }
 
-    .ulNav:last-child {
-        margin-right: auto;
-    }
+  .ulNav {
+    display: flex;
+    justify-content: flex-start;
+  }
 
-    .navLinks{
-        padding: 10px;
-        margin-left: 20px;
-    }
+  .ulNav:first-child {
+    margin-left: auto;
+  }
 
-    .photoAndMainContent, .treningi, .kontakt, .rugby {  /*-- style dla podstrony  dla monitorów PC--*/
-        margin-top: 110px;
-    }
+  .ulNav:last-child {
+    margin-right: auto;
+  }
 
-    .photoAndMainContent figure {
-        margin-bottom: 6px;
-    }
+  .navLinks {
+    padding: 10px;
+    margin-left: 20px;
+  }
 
-    .mapaZG {
-        display: block;
-        max-width: 800px;
-        margin: 20px auto;
-        margin-top: 20px;
-    }
+  .photoAndMainContent,
+  .treningi,
+  .kontakt,
+  .rugby {
+    /*-- style dla podstrony  dla monitorów PC--*/
+    margin-top: 110px;
+  }
 
-    .gridBox {
-        margin: auto 20px;
-        display: grid;
-        grid-template-columns: 1.1fr 1fr 1.1fr;
-        grid-column-gap: 2%;
-    }
+  .photoAndMainContent figure {
+    margin-bottom: 6px;
+  }
 
-    .kontakt {
-        padding-top: 40px;
-    }
+  .mapaZG {
+    display: block;
+    max-width: 800px;
+    margin: 20px auto;
+    margin-top: 20px;
+  }
 
-    .gridGallery {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-column-gap: 2%;
-        padding: 0 2%;
-    }
+  .gridBox {
+    margin: auto 20px;
+    display: grid;
+    grid-template-columns: 1.1fr 1fr 1.1fr;
+    grid-column-gap: 2%;
+  }
+
+  .kontakt {
+    padding-top: 40px;
+  }
+
+  .gridGallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 2%;
+    padding: 0 2%;
+  }
 }
- 
