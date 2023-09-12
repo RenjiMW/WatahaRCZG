@@ -190,8 +190,13 @@ body {
   grid-template-rows: [row_1] auto [row_2] auto;
 }
 
+.mainContent h1,
+.mainContent h2 {
+  margin-bottom: 0.2em;
+}
+
 .welcomeContent {
-  padding-top: 2%;
+  padding-top: 0%;
   padding-left: 5%;
   padding-right: 5%;
   grid-column-start: col_1;
@@ -199,9 +204,13 @@ body {
   /* background-color: rgba(255, 0, 0, 0.406); */
 }
 
-/* .gridMinor {
-  padding-top: 5%;
-} */
+.gridMinor h2 {
+  margin-top: 0.4em;
+}
+
+.gridMinor p {
+  margin: 0.2em auto;
+}
 
 .gridMatches {
   padding-left: 20%;
