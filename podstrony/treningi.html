@@ -6,26 +6,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>WatahaRCZG</title>
-        <!-- <meta name="description" content="A simple HTML5 Template for new projects.">
-        <meta name="author" content="SitePoint">
-
-        <meta property="og:title" content="A Basic HTML5 Template">
-        <meta property="og:type" content="website">
-        <meta property="og:url" content="https://www.sitepoint.com/a-basic-html5-template/">
-        <meta property="og:description" content="A simple HTML5 Template for new projects.">
-        <meta property="og:image" content="image.png"> -->
 
         <link rel="icon" href="../images/ryj.png">
-        <!-- <link rel="icon" href="favicon.svg" type="image/svg+xml">
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png"> -->
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">  
         <link rel="stylesheet" href="../css/normalize.css">
         <link rel="stylesheet" href="../css/style.css">
-        
-
     </head>
 
     <body>
@@ -47,102 +35,98 @@
                 </nav> <!-- Koniec nawigacji strony -->
 
             </header> <!-- Koniec Logo oraz nawigacji -->
-            <div class="bodyDiv">
-            <div class="treningi"> <!-- sekcja dla wszystkiego poza nagłówkiem -->
+            <main class="bodyDiv treningi">
+                <section>
+                    <h2>Treningi rugby w Zielonej Górze</h2>
+                    <div class="gridBox">
+                        <div class="column_1">
+                            <div id="sections">  
+                                <h3>Sekcje</h3>
+                                <ul>
+                                    <li class="junior">
+                                        <h4>Sekcja młodzieżowa (11-14 lat)</h4>
+                                        <p class="when">wtorki i czwartki 18:00</p>
+                                    </li>
+                                    
+                                    <li class="senior">
+                                        <h4>Sekcja seniorska (wiek 17+)</h4>
+                                        <p class="when">wtorki i czwartki 19:30</p>
+                                    </li>
+                                </ul>
+                            </div>  
+                            <div class="price">
+                                <h3>Cena</h3>
+                                <ul>
+                                    <li>Pierwszy miesiąc 0 zł</li>
+                                    <li>Następnie 70 zł/miesiąc (składka klubowa)</li>
+                                </ul>
+                            </div>
+
+                            <div class="place">    
+                                <h3>Miejsce treningów</h3>
+                                <p> Boisko do rugby przynależe do SP18 w Zielonej Górze ul. Xawerego Dunikowskiego 69.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="column_2">
+                            <div class="AdditionalInfo">
+                                <h3> Dodatkowe informacje</h3>
+                                <p>• Zapraszamy do trenowania wszystkie osoby niezależnie od ich stopnia wytrenowania oraz budowy ciała.</p>
+                                <p>• Osoby początkujące są mile widziane i mogą zacząć w dowolnym terminie, gdy odbywają się treningi.</p>
+                                <p>• Seniorzy trenują od 15 sierpnia do 15 listopada oraz od 1 lutego do 30 czerwca każdego roku.</p>
+                            </div>
+                            <div class="clothing">
+                                <h3>Ubranie</h3>
+                                <p></p>
+                                <ul>
+                                    <li>• Zalecany jest ubiór sportowy dostosowany do pogody, np. koszulka i krótkie spodenki, bielizna termoizalcyjna.</li>
+                                    <li>• Buty: na pierwsze treniengi wystarczy dowolne obuwie sportowe, następnie (lub odrazu) warto zainwestować w tzw. korki.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div> <!-- Koniec dla gridBox -->
+                        
+                    <!--Mapa ZG-->
+                    <div class="mapContainer">
+                        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11666.887566855452!2d15.485836049837005!3d51.933973774134735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.
+                        1!3m3!1m2!1s0x4706115493d573cb%3A0x8bda9b26401e628e!2sXawerego%20Dunikowskiego%2069%2C%2065-140%20Zielona%20G%C3%B3ra!5e0!3m2!1spl!2spl!4v1655267584156!5m2!1spl!2spl" 
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <!--https://www.google.com/maps/place/Xawerego+Dunikowskiego,+65-943+Zielona+G%C3%B3ra/@51.9353422,15.4961867,13.25z/data=!4m5!3m4!1s0x470611547230157b:0x8d8e67a8fc972e7e!8m2!3d51.9331019!4d15.473591 -->
                     
-                <div>
-                     <main>
-                        <section>
-                            <h2>Treningi rugby w Zielonej Górze</h2>
-                            <div class="gridBox">
-                                <div id="sections">  
-                                    <h3>Sekcje</h3>
-                                    <ul>
-                                        <li>Sekcja młodzieżowa (11-14 lat)</li>
-                                        <li>Sekcja seniorska (wiek 17+)</li>
-                                    </ul>
-                                    <!-- <button type="button" class="sectionsBtn">Pokaż szczegóły</button> -->
-                                    <ul id="sectionsRemarks"> <!-- class="hide" -->
-                                        <li>• Sekcje nie są dzielone na początkujących i zaawansowanych.</li>
-                                        <li>• Osoby początkujące są mile widziane i mogą zacząć niezależnie 
-                                            od dnia, pory roku i stopnia wytrenowania, chodź najlepszym czasem (dla nich) na rozpoczęcie przygody z rugby będzie styczeń 
-                                            (tak, zimą też trenujemy, tylko że na Orliku :))</li>
-                                    </ul>
-                                </div>  
-                                
-                                <div class="when">
-                                    <h3> Kiedy</h3>
-                                    <p>Sekcja młodzieżowa (11-14 lat)</p>
-                                    <ul>
-                                        <li>Wtorki 17:30 - 19:00</li>
-                                        <li>Czwartki 17:30 - 19:00</li>
-                                    </ul>
-
-                                    <p>Sekcja seniorska (wiek 17+)</p>
-                                    <ul>
-                                        <li>Środa 19:00</li>
-                                        <li>Sobota 15:30</li>
-                                    </ul>
-                                    <p id="importantTip"><span>Uwaga:</span> Zdarza się, że treningi zaczynają się z około 10 minutowym opóźnieniem.</p>
-                                </div>
-
-                                <div class="price">
-                                    <h3>Cena</h3>
-                                    <ul>
-                                        <li>Pierwszy miesiąc 0 zł</li>
-                                        <li>Następnie 50 zł/miesiąc (składka klubowa)</li>
-                                    </ul>
-                                    <p>Cena dla obu sekcji jest taka sama</p>
-                                    <p>W przypadku osób dopiero zaczynających przygodę z rugby (do pół roku), a uczestniczących w trenigach <br>
-                                        z częstotliwością inną niż 100% możliwe jest ustalenie niższej stawki, dopasowej do ich obecności.
-                                    </p>
-                                </div>
-
-                                <div class="AdditionalInfo">
-                                    <h3> Dodatkowe informacje</h3>
-                                    <p>Na treningi seniorów orez młodzierzowe zapraszamy wszystkie osoby niezależnie od ich stopnia wytrenowania oraz budowy ciała, 
-                                        W rugby niski wzrost i mała masa ciała, predystynują do określonych, ważnych ról na boisku, tak samo jak każdy 
-                                        inny typ sylwetki (czy jest to wysoki atleta, czy ktoś o nadmiarze tkanki tłuszczowej, czy ktoś średniego wzrostu 
-                                        i średniej wagi itp.) ma do wykonania swoje zadania.</p>
-                                </div>
-
-                                <div class="place">    
-                                    <h3>Miejsce treningów</h3>
-                                    <p>Marzec - Listopad: boisko do rugby przynależe do SP18 w Zielonej Górze ul. Xawerego Dunikowskiego.</p>
-                                    <p>Styczeń - Luty: boisko SP13 w Zielonej Górze ul. Fryderyka Chopina.</p>
-                                </div>
-
-
-                                <div class="clothing">
-                                    <h3>Ubranie</h3>
-                                    <p>W ciepłe dni (+15*C) podstawowy ubiór na treningu to:</p>
-                                    <ul>
-                                        <li>• Koszulka oraz krtókie spodenki</li>
-                                        <li>• Buty: na pierwsze treniengi - obojętnie jakie obuwie sportowe, ale zalecane są korki (obuwie piłkarskie) - lanki lub metalowe wkręty
-                                            (jeśli trening miałby odbywać się na sztucznej murawie, dozwolone są tylko lanki) </li>
-                                        <li>• Długie skarpetki lub getry (zalecne).</li>
-                                    </ul>
-                                </div>
-                            </div> <!-- Koniec dla gridBox -->
-                                
-                            <!--Mapa ZG-->
-                            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11666.887566855452!2d15.485836049837005!3d51.933973774134735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.
-                            1!3m3!1m2!1s0x4706115493d573cb%3A0x8bda9b26401e628e!2sXawerego%20Dunikowskiego%2069%2C%2065-140%20Zielona%20G%C3%B3ra!5e0!3m2!1spl!2spl!4v1655267584156!5m2!1spl!2spl" 
-                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-                            <!--https://www.google.com/maps/place/Xawerego+Dunikowskiego,+65-943+Zielona+G%C3%B3ra/@51.9353422,15.4961867,13.25z/data=!4m5!3m4!1s0x470611547230157b:0x8d8e67a8fc972e7e!8m2!3d51.9331019!4d15.473591 -->
-                            
-                        </section>
-                    </main>
-                        <p><a href="#">Powrót do góry</a></p>
-                    </footer>
-                </div> <!-- Koniec dla mainContent -->
-            
-            </div> <!-- KONIEC - sekcja dla wszystkiego poza nagłówkiem  --------------->
-        </div><!-- KONIEC - sekcja dla body  --------------->
+                </section>
+            </main>
                 <hr>
                 <footer class="footer">
                     <p><small>Wataha Rugby Club Zielona Góra</small></p>
+                    <div>
+                        <a
+                            href="https://www.facebook.com/WatahaRugbyClubZielonaGora"
+                            target="_blank"
+                            ><img
+                            class="followIcons"
+                            src="../images/facebook.png"
+                            alt="Facebook Logo"
+                            title="Znajdź nas na facebooku"
+                        /></a>
+                        <a
+                            href="https://www.instagram.com/wataha_rugby_club_zielona_gora/"
+                            target="_blank"
+                            ><img
+                            class="followIcons"
+                            src="../images/instagram.png"
+                            alt="Instagram Logo"
+                            title="Znajdź nas na instagramie"
+                        /></a>
+                        <a href="https://www.tiktok.com/@wataha.rugby.zg" target="_blank"
+                            ><img
+                            class="followIcons"
+                            src="../images/tiktok.png"
+                            alt="Tiktok Logo"
+                            title="Znajdź nas na tiktoku"
+                        /></a>
+                    </div>
                 </footer>
             
             <script src="../app.js"></script>

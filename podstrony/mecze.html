@@ -6,18 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>WatahaRCZG</title>
-        <!-- <meta name="description" content="A simple HTML5 Template for new projects.">
-        <meta name="author" content="SitePoint">
-
-        <meta property="og:title" content="A Basic HTML5 Template">
-        <meta property="og:type" content="website">
-        <meta property="og:url" content="https://www.sitepoint.com/a-basic-html5-template/">
-        <meta property="og:description" content="A simple HTML5 Template for new projects.">
-        <meta property="og:image" content="image.png"> -->
 
         <link rel="icon" href="../images/ryj.png">
-        <!-- <link rel="icon" href="favicon.svg" type="image/svg+xml">
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png"> -->
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -48,67 +38,98 @@
             </header> <!-- Koniec Logo oraz nawigacji -->
 
             <div class="bodyDiv rugby"> <!-- sekcja dla wszystkiego poza nagłówkiem -->
-                    
-                <div>
-                    <main>
-                        <section class="matchSection">
-                            <h3><span class="teamsListTitle">Lista zespołów</span> <br>biorących udział w rozgrywkach<br>
-                                II Ligi Rugby w sezonie 2021/2022</h3>
-                            <ul class="teamsList">
-                                <li>1. Wataha RC Zielona Góra</li>
-                                <li>2. Rugby Ruda Śląska</li>
-                                <li>3. Miedziowi Lubin</li>
-                                <li>4. Hegemon Mysłowice</li>
-                                <li>5. Rugby Team Olsztyn</li>
-                            </ul>
-                            
-                            <h2>Najbliższe mecze Watahy RC Zielona Góra</h2>
-                            <!-- dodać podział na mecze wyjazdowe i domowe w gridzie w osobnych kolumnach --->
-                            <div class="matchDiv">
-                                <div class="hostMatches">
-                                    <h3>Mecze w Zielonej Górze</h3>
-                                    <ul>
-                                        <li>VII kolejka (24.04.2022)<br> 
-                                            Wataha RCZG v Rugby Ruda Śląska</li>
-                                        <li>IX kolejka (14-15.05.2022)<br> 
-                                                Wataha RCZG v Hegemon Mysłowice</li>
-                                    </ul>
-                                </div>
-                                <div class="guestMatches">
-                                    <h3>Mecze wyjazdowe</h3>
-                                    <ul>
-                                        <li>VIII kolejka (07-08.05.2022)<br>
-                                            Miedziowi Lubin v Wataha RCZG</li>
-                                        <li>X kolejka (28-29.05.2022)<br>
-                                            Rugby Team Olsztyn v Wataha RCZG</li>
-                                    </ul>
-                                </div>
-                            </div>
-                                <p ><span class="important">Mecze finałowe:</span> (mecz i rewanż) 11-12.06.2022 i 18-19.06.2022</p>
-                            
-                            
-                            <h4 id="matchTipsHeader">Podpowiedź:</h4>
-                            <div>
+                <main>
+                    <section class="matchSection">
+                        <h2>Najbliższe mecze Watahy RC Zielona Góra</h2>
+
+                        <table class="matchesTable">
+                            <thead>
+                                <tr>
+                                    <th>Kolejka</th><th>Gospodarz</th> <th>Gość</th> <th>Data</th> <th>Wynik</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>1</td><td><span class="host">Wataha RC Zielona Góra</span></td> <td>Gryfy Rugby Ruda Śląska</td> <td>03.09.2023</td> <td>19 : 84</td> 
+                                </tr>
+                                <tr>
+                                    <td>2</td><td>AWP Budowlani II Lublin</td> <td><span class="host">Wataha RC Zielona Góra</span></td> <td>17.09.2023</td> <td>14 : 71</td> 
+                                </tr>
+                                <tr>
+                                    <td>3</td><td><span class="host">Wataha RC Zielona Góra</span></td> <td>KS Budowlani Łódż II</td> <td>01.10.2023</td> <td>-- : --</td> 
+                                </tr>
+                                <tr> 
+                                    <td>4</td><td><span class="host">Wataha RC Zielona Góra</span></td> <td>Rugby Team Olsztyn</td> <td>07.09.2023</td> <td>-- : --</td> 
+                                </tr>
+                                <tr>
+                                    <td>5</td><td>Miedziowi Lubin</td> <td>KS Budowlani Łódż II</td> <td>21/22.10.2023</td> <td>-- : --</td> 
+                                </tr>
+                                <tr>
+                                    <td>6</td><td>Gryfy Rugby Ruda Śląska</td> <td><span class="host">Wataha RC Zielona Góra</span></td> <td>28/29.10.2023</td> <td>-- : --</td> 
+                                </tr>
+                                <tr>
+                                    <td>7</td><td><span class="host">Wataha RC Zielona Góra</span></td> <td>AWP Budowlani II Lublin</td> <td>04/05.11.2023</td> <td>-- : --</td> 
+                                </tr>
+                                <tr>
+                                    <td>8</td><td>KS Budowlani Łódż II</td> <td><span class="host">Wataha RC Zielona Góra</span></td> <td>16/17.03.2024</td> <td>-- : --</td> 
+                                </tr>
+                                <tr>
+                                    <td>9</td><td>Rugby Team Olsztyn</td> <td><span class="host">Wataha RC Zielona Góra</span></td> <td>23/24.03.2024</td> <td>-- : --</td> 
+                                </tr>
+                                <tr>
+                                    <td>10</td><td><span class="host">Wataha RC Zielona Góra</span></td> <td>Miedziowi Lubin</td> <td>06/07.04.2024</td> <td>-- : --</td> 
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <p ><span class="important">Mecze finałowe:</span></p>
+                        <ul>
+                            <li>Runda 1 - Play Off - 20/21.04.2024</li>
+                            <li>Runda 2 - Play Off - 04/05.05.2024</li>
+                            <li>Runda 3 - Play Off - 18/19.05.2024</li>
+                        </ul>
+                        
+                        <h4 id="matchTipsHeader">Podpowiedź:</h4>
+                        <div>
                             <ul class="matchTips">
-                                <li>•	Mecze mogą odbywać się na wyjeździe (jako goście) lub na bosku klubowym (jako gospodarze). 
-                                    W liście meczy, gospodarz zawsze wymieniony jest jako pierwszy.</li>
-                                <li>•	Mecze odbywają się w weekendy i podawane daty często obejmują 2 dni (np. 23-24.04.). 
-                                    Dokładna data oraz godzina rozpoczęcia meczu podawana jest na około tydzień przed danym wydarzeniem. 
-                                    Takie informacje często publikujemy też na naszym facebook’u</li>
-                                <li>•	Więcej informacji znajdziesz na stronie <a href="https://pzrugby.pl/tabele/Tabelawynikiterminarz,66" target="_blank">Polskiego Związku Rugby</a></li>
+                                <li>🏉 Dokładna data oraz godzina rozpoczęcia meczu dostępna jest około tydzień przed danym wydarzeniem na naszym facebook’u</li>
+                                <li>🏉 Wstęp zawsze jest darmowy</li>
                             </ul>
-                            </div>
-                            <p>Zaprawszamy na niezapomniane emocje!</p>                           
-                        </section>
-                     
-                    </main>
-                    
-                </div> <!-- Koniec  -->
-            
+                        </div>
+                        <p>Zapraszamy!</p>                           
+                    </section>
+                </main>
             </div> <!-- KONIEC - sekcja dla rugby ORAZ bodyDiv --------------->
                 <hr>
-                <footer class="footer">
-                    <p><small>Wataha Rugby Club Zielona Góra</small></p>
+                <footer class="footer"><p><small>Wataha Rugby Club Zielona Góra</small></p>
+                    <div>
+                        <a
+                            href="https://www.facebook.com/WatahaRugbyClubZielonaGora"
+                            target="_blank"
+                            ><img
+                            class="followIcons"
+                            src="../images/facebook.png"
+                            alt="Facebook Logo"
+                            title="Znajdź nas na facebooku"
+                        /></a>
+                        <a
+                            href="https://www.instagram.com/wataha_rugby_club_zielona_gora/"
+                            target="_blank"
+                            ><img
+                            class="followIcons"
+                            src="../images/instagram.png"
+                            alt="Instagram Logo"
+                            title="Znajdź nas na instagramie"
+                        /></a>
+                        <a href="https://www.tiktok.com/@wataha.rugby.zg" target="_blank"
+                            ><img
+                            class="followIcons"
+                            src="../images/tiktok.png"
+                            alt="Tiktok Logo"
+                            title="Znajdź nas na tiktoku"
+                        /></a>
+                    </div>
                 </footer>
             
             <script src="js/scripts.js"></script>

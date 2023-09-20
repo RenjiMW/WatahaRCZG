@@ -103,46 +103,61 @@ body {
   margin-bottom: 100; /* ---------- to chyba jakiś błąd do naprawienia?? #141407 poprzedni color---------------*/
 }
 
-.matchTips li {
-  padding: 0 27% 0 27%;
-  text-align: justify;
-}
-
-.teamsListTitle {
-  font-size: 1.3em;
-}
-
-.matchDiv {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-column-gap: 1%;
-}
-
-.hostMatches {
-  padding-left: 50%;
-}
-
-.guestMatches {
-  padding-right: 50%;
-}
-
-.hostMatches h3,
-.guestMatches h3,
-.hostMatches ul li,
-.guestMatches ul li {
-  margin-bottom: 10px;
-}
-
-#matchTipsHeader {
-  margin-bottom: 8px;
-}
-
 .bodyDiv {
   width: 70%; /* NOT MOBILE FIRST!! */
   margin: auto;
   min-height: calc(100vh - 170px);
   background-color: #070d07;
   color: white;
+}
+
+/* ---------- MATCHES STYLES ---------------*/
+
+/* 
+000000
+3E4634
+3E664D
+569B73
+DBD76B
+ */
+.matchesTable {
+  margin: auto;
+  border-collapse: collapse;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  font-size: 0.9em;
+}
+
+.matchesTable th,
+.matchesTable td {
+  border: 2px solid white;
+  padding: 11px 15px;
+}
+
+.matchesTable th {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.matchesTable thead {
+  background-color: #3e664d;
+}
+
+.matchesTable tbody {
+  background-color: #3e4634;
+}
+
+.host {
+  color: #f9ff00;
+}
+
+.matchTips li {
+  padding: 0 27% 0 27%;
+  text-align: justify;
+}
+
+#matchTipsHeader {
+  margin-bottom: 8px;
 }
 
 /*---------- Images size in gallery ------------------*/
@@ -287,12 +302,37 @@ hr {
   padding: 5px 20px;
 }
 
+.gridBox h3 {
+  margin-bottom: 0.5em;
+}
+
+.price,
+.place {
+  margin-top: 2em;
+}
+
+.clothing {
+  margin-top: 2em;
+}
+
 #sectionsRemarks {
   margin-top: 0.5em;
 }
 
 #sectionsRemarks li {
   text-align: justify;
+}
+
+#sections h4 {
+  margin: 0;
+}
+
+.junior {
+  margin-bottom: 15px;
+}
+
+.when {
+  margin-top: 5px;
 }
 
 .AdditionalInfo p {
@@ -571,13 +611,18 @@ hr {
     display: block;
     max-width: 800px;
     margin: 20px auto;
+    /* margin-top: 20px; */
+  }
+
+  .mapContainer {
     margin-top: 20px;
   }
 
   .gridBox {
     margin: auto 20px;
     display: grid;
-    grid-template-columns: 1.1fr 1fr 1.1fr;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 1fr;
     grid-column-gap: 2%;
   }
 
