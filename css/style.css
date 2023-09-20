@@ -387,9 +387,20 @@ hr {
 }
 
 /* ---------- Media Queries ---------------------*/
-/* ---------- To (max-width: 576px) chyba powinno być w podstawowych stylach jako mobile first---------------------*/
+/* ---------- To (max-width: 576px) - should be mobile first---------------------*/
 
 @media screen and (max-width: 576px) {
+  .matchSection h2,
+  #matchTipsHeader,
+  .matchSection h4 {
+    font-size: 1em;
+  }
+
+  p,
+  li {
+    font-size: small;
+  }
+
   .navLinks {
     font-size: 0.6em;
     padding: 4px;
@@ -468,15 +479,36 @@ hr {
     min-height: calc(100vh - 120px);
   }
 
-  .guestMatches {
-    padding-right: 5px;
-  }
-  .hostMatches {
-    padding-left: 5px;
-  }
-
+  /* ////////////////  Matches SUBPAGE //////////////// */
   .matchTips li {
     padding: 5px;
+  }
+
+  .matchesTable {
+    margin: 2px;
+    border-collapse: collapse;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    font-size: 0.5em;
+  }
+
+  .matchesTable th,
+  .matchesTable td {
+    border: 2px solid white;
+    padding: 2px 2px;
+  }
+
+  .matchesTable th {
+    font-size: 1em;
+    font-weight: bold;
+  }
+
+  .matchesTable thead {
+    background-color: #3e664d;
+  }
+
+  .matchesTable tbody {
+    background-color: #3e4634;
   }
 }
 
