@@ -485,7 +485,7 @@ hr {
   }
 
   .matchesTable {
-    margin: 2px;
+    margin: auto;
     border-collapse: collapse;
     border-radius: 5px 5px 0 0;
     overflow: hidden;
