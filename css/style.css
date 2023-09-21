@@ -390,11 +390,9 @@ hr {
 /* ---------- To (max-width: 576px) - should be mobile first---------------------*/
 
 @media screen and (max-width: 576px) {
-  .matchSection h2,
-  #matchTipsHeader,
-  .matchSection h4 {
+  /* h1 {
     font-size: 1em;
-  }
+  } */
 
   p,
   li {
@@ -402,8 +400,9 @@ hr {
   }
 
   .navLinks {
-    font-size: 0.6em;
-    padding: 4px;
+    font-size: 0.8em;
+    padding: 6px;
+    margin-left: 5px;
   }
 
   .mainContent {
@@ -478,14 +477,25 @@ hr {
     width: 95%;
     min-height: calc(100vh - 120px);
   }
+  /* ////////////////  Trainings SUBPAGE //////////////// */
+  .treningi section h2 {
+    margin-top: 4px;
+    /* background-color: red; */
+  }
 
   /* ////////////////  Matches SUBPAGE //////////////// */
+  .matchSection h2,
+  #matchTipsHeader,
+  .matchSection h4 {
+    font-size: 1em;
+  }
+
   .matchTips li {
     padding: 5px;
   }
 
   .matchesTable {
-    margin: 2px;
+    margin: auto;
     border-collapse: collapse;
     border-radius: 5px 5px 0 0;
     overflow: hidden;
