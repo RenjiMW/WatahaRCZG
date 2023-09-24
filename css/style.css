@@ -120,6 +120,12 @@ body {
 569B73
 DBD76B
  */
+
+.matchSection h2 {
+  margin-top: 20px;
+  /* background-color: red; */
+}
+
 .matchesTable {
   margin: auto;
   border-collapse: collapse;
@@ -401,6 +407,19 @@ hr {
 
 .sectionsBtn {
   margin-top: 15px;
+}
+
+/* ---- contact section ---- */
+.kontakt {
+  line-height: 140%;
+}
+
+.kontakt a {
+  color: white;
+}
+
+.contactIcon {
+  max-height: 20px;
 }
 
 /* ---------- Media Queries ---------------------*/
